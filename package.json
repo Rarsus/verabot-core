@@ -1,5 +1,5 @@
 {
-  "name": "verabot-core",
+  "name": "@verabot/core",
   "version": "1.0.0",
   "description": "Core bot infrastructure for Verabot - Base classes, services, and helpers for Discord bot development",
   "main": "src/index.js",
@@ -51,7 +51,7 @@
   "dependencies": {
     "discord.js": "^14.11.0",
     "dotenv": "^17.2.3",
-    "verabot-utils": "file:../verabot-utils"
+    "@verabot/utils": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.28.6",

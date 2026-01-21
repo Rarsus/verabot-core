@@ -27,8 +27,6 @@ module.exports = {
   },
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
-    '^verabot-utils/(.*)$': '<rootDir>/../verabot-utils/src/$1',
-    '^verabot-commands/(.*)$': '<rootDir>/../verabot-commands/src/$1',
   },
   setupFilesAfterEnv: [],
   testTimeout: 10000,
