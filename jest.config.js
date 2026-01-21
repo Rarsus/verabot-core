@@ -15,6 +15,8 @@ module.exports = {
     '!src/**/*.test.js',
     '!src/**/index.js',
   ],
+  coverageDirectory: 'coverage',
+  coverageReporters: ['json', 'lcov', 'text', 'text-summary'],
   coverageThreshold: {
     global: {
       branches: 5,
@@ -31,5 +33,5 @@ module.exports = {
   verbose: false,
   bail: false,
   maxWorkers: '50%',
-  collectCoverage: false,
+  collectCoverage: process.env.CI === 'true' || process.env.GITHUB_ACTIONS === 'true',
 };
